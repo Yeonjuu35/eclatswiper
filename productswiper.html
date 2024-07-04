@@ -21,28 +21,86 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="d-flex container justify-content-center">
-                    <div class="col-8 d-flex justify-content-center">
-                        <img src="./img/1.png" alt="Image 1" class="col-6">
+                    <div class="col-8 d-flex justify-content-center align-items-center">
+                        <img src="./img/1_1.png" alt="샤인머스캣 시카 바하 토너패드" class="col-6 imgblank">
                     </div>
                     
                     <ul class="list-unstyled col-6 d-flex flex-column justify-content-between align-items-stretch">
-                        <li class="title_text protitlepadding">베스트상품</li>
-                        <li class="proNm_text proNmpadding">샤인머스켓 시카 바하 토너1</li>
-                        <li class="sub_text20">
+                        <li class="title_text titleblank">베스트상품</li>
+                        <li class="proNm_text proNmblank">샤인머스켓 시카 바하 토너패드</li>
+                        <li class="sub_text20 subblank">
                             샤인머스캣 추출물과 바하 성분이 각질을 케어해
                             <span class="d-block">피부결을 매끈하게 마무리해주는 토너패드</span>
                         </li>
-                        <li class="btnpadding"><button class="bBox"><a href="#" class="text-decoration-none bBox_text">구매하러가기</a></button></li>
+                        <li class="btnblank"><button class="bBox"><a href="#" class="text-decoration-none bBox_text">구매하러가기</a></button></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="d-flex container justify-content-center">
+                    <div class="col-8 d-flex justify-content-center align-items-center">
+                        <img src="./img/2_2.png" alt="Image 2" class="col-6 imgblank">
+                    </div>
+                    
+                    <ul class="list-unstyled col-6 d-flex flex-column justify-content-between align-items-stretch">
+                        <li class="title_text titleblank">베스트상품</li>
+                        <li class="proNm_text proNmblank">샤인머스켓 시카 바하 토너2</li>
+                        <li class="sub_text20 subblank">
+                            샤인머스캣 추출물과 바하 성분이 각질을 케어해
+                            <span class="d-block">피부결을 매끈하게 마무리해주는 토너패드</span>
+                        </li>
+                        <li class="btnblank"><button class="bBox"><a href="#" class="text-decoration-none bBox_text">구매하러가기</a></button></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="d-flex container justify-content-center">
+                    <div class="col-8 d-flex justify-content-center align-items-center">
+                        <img src="./img/3_2.png" alt="Image 3" class="col-6 imgblank">
+                    </div>
+                    
+                    <ul class="list-unstyled col-6 d-flex flex-column justify-content-between align-items-stretch">
+                        <li class="title_text titleblank">베스트상품</li>
+                        <li class="proNm_text proNmblank">샤인머스켓 시카 바하 토너3</li>
+                        <li class="sub_text20 subblank">
+                            샤인머스캣 추출물과 바하 성분이 각질을 케어해
+                            <span class="d-block">피부결을 매끈하게 마무리해주는 토너패드</span>
+                        </li>
+                        <li class="btnblank"><button class="bBox"><a href="#" class="text-decoration-none bBox_text">구매하러가기</a></button></li>
                     </ul>
                 </div>
             </div>
         </div>
+        
         <!-- Add Pagination -->
         <!-- <div class="swiper-pagination"></div> -->
     </div>
 </div>
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var galleryTop = new Swiper('.gallery-top', {
+            spaceBetween: 10,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            // autoplay: {
+            //         delay: 2000,
+            //         disableOnInteraction: false,
+            //     },
+            // loop: true,
+            on: {
+                slideChange: function () {
+                    var activeIndex = this.activeIndex;
+                    var origincls = 'productguide position-relative';
+                    document.querySelector('.productguide').classList = 'active-' + activeIndex +' '+ origincls;
+                }
+            }
+        });
+    });
+</script> -->
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         var galleryTop = new Swiper('.gallery-top', {
@@ -51,16 +109,22 @@
                 el: '.swiper-pagination',
                 clickable: true,
             },
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            loop: true,
             on: {
                 slideChange: function () {
-                    var activeIndex = this.activeIndex;
-                    var origincls = 'productguide d-flex justify-content-center align-items-center position-relative';
+                    var activeIndex = this.realIndex;
+                    var origincls = 'productguide position-relative';
                     document.querySelector('.productguide').classList = 'active-' + activeIndex +' '+ origincls;
                 }
             }
         });
     });
 </script>
+
 
 </body>
 </html>
