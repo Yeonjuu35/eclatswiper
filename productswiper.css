@@ -104,13 +104,16 @@ ul, li, p, h1, h2, h3, h4{
 }
 
 .protitlepadding{
-    padding-top: 125px;
-    padding-bottom: 50px;
+    margin-top: 125px;
+    margin-bottom: 50px;
 }
-.proNmppadding{
-    padding-top: 47px;
+.proNmpadding{
+    margin-top: 47px;
 }
 .btnpadding{
-    padding-top: 79px;
-    padding-bottom: 80px;
+    margin-top: 79px;
+    margin-bottom: 80px;
 }
+/* .product_img{
+    max-width: 100%;
+} */
