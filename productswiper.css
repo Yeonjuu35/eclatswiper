@@ -103,3 +103,14 @@ ul, li, p, h1, h2, h3, h4{
     background-color: rgba(177, 250, 129, 0.7);
 }
 
+.protitlepadding{
+    padding-top: 125px;
+    padding-bottom: 50px;
+}
+.proNmppadding{
+    padding-top: 47px;
+}
+.btnpadding{
+    padding-top: 79px;
+    padding-bottom: 80px;
+}
