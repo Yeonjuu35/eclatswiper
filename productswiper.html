@@ -4,102 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linked Swipers</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    
-    <style>
 
-        
-      
-        .gallery-thumbs .swiper-slide {
-          
-            font-size: 1.2rem;
-          
-        }
-        .swiper-pagination {
-            margin-top: 10px;
-        }
-    </style>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+    <link rel="stylesheet" href="/productswiper.css">
 </head>
+
 <body>
-
-<div class="container d-flex align-items-end justify-content-between">
-
-    <div class="swiper-container gallery-top col-8 overflow-hidden">
+<div class="productguide d-flex justify-content-center align-items-center position-relative">
+    <!-- <span class="backgroundbox"></span> -->
+    <div class="swiper-container gallery-top overflow-hidden">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img src="./img/1.png" alt="Image 1">
+                <div class="d-flex align-items-center container justify-content-center">
+                    <div class="col-8 d-flex justify-content-center">
+                        <img src="./img/1.png" alt="Image 1" class="col-6">
+                    </div>
+                    
+                    <ul class="list-unstyled col-6">
+                        <li class="title_text">베스트상품</li>
+                        <li class="proNm_text">샤인머스켓 시카 바하 토너1</li>
+                        <li class="sub_text20">
+                            샤인머스캣 추출물과 바하 성분이 각질을 케어해
+                            <span class="d-block">피부결을 매끈하게 마무리해주는 토너패드</span>
+                        </li>
+                        <li><button class="bBox"><a href="#" class="text-decoration-none bBox_text">구매하러가기</a></button></li>
+                    </ul>
+                </div>
             </div>
             <div class="swiper-slide">
-                <img src="./img/2.png" alt="Image 2">
+                <div class="d-flex align-items-center container justify-content-center">
+                    <div class="col-8 d-flex justify-content-center">
+                        <img src="./img/2.png" alt="Image 2" class="col-6">
+                    </div>
+                    
+                    <ul class="list-unstyled col-6">
+                        <li class="title_text">베스트상품</li>
+                        <li class="proNm_text">샤인머스켓 시카 바하 토너2</li>
+                        <li class="sub_text20">
+                            샤인머스캣 추출물과 바하 성분이 각질을 케어해
+                            <span class="d-block">피부결을 매끈하게 마무리해주는 토너패드</span>
+                        </li>
+                        <li><button class="bBox"><a href="#" class="text-decoration-none bBox_text">구매하러가기</a></button></li>
+                    </ul>
+                </div>
             </div>
             <div class="swiper-slide">
-                <img src="./img/3.png" alt="Image 3">
+                <div class="d-flex align-items-center container justify-content-center">
+                    <div class="col-8 d-flex justify-content-center">
+                        <img src="./img/3.png" alt="Image 3" class="col-6">
+                    </div>
+                    
+                    <ul class="list-unstyled col-6">
+                        <li class="title_text">베스트상품</li>
+                        <li class="proNm_text">샤인머스켓 시카 바하 토너3</li>
+                        <li class="sub_text20">
+                            샤인머스캣 추출물과 바하 성분이 각질을 케어해
+                            <span class="d-block">피부결을 매끈하게 마무리해주는 토너패드</span>
+                        </li>
+                        <li><button class="bBox"><a href="#" class="text-decoration-none bBox_text">구매하러가기</a></button></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
     </div>
-    
-    <div class="swiper-container gallery-thumbs overflow-hidden ps-5 swiperText col-6">
-        <h2>베스트상품</h2>
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                
-                <ul class="list-unstyled">
-                    <li>샤인머스켓 시카 바하 토너1</li>
-                    <li class="text-nowrap">샤인머스캣 추출물과 바하 성분이 각질을 케어해
-                        <span class="d-block">피부결을 매끈하게 마무리해주는 토너패드</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="swiper-slide">
-                <ul class="list-unstyled">
-                    <li>샤인머스켓 시카 바하 토너2</li>
-                    <li class="text-nowrap">샤인머스캣 추출물과 바하 성분이 각질을 케어해
-                        <span class="d-block">피부결을 매끈하게 마무리해주는 토너패드</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="swiper-slide">
-                <ul class="list-unstyled">
-                    <li>샤인머스켓 시카 바하 토너3</li>
-                    <li class="text-nowrap">샤인머스캣 추출물과 바하 성분이 각질을 케어해
-                        <span class="d-block">피부결을 매끈하게 마무리해주는 토너패드</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <button>구매하러가기</button>
-    </div>
 </div>
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
-    // Initialize Swiper
-    var galleryTop = new Swiper('.gallery-top', {
-        spaceBetween: 10,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
-
-    var galleryThumbs = new Swiper('.gallery-thumbs', {
-        spaceBetween: 10,
-        slidesPerView: 1,
-        freeMode: true,
-        watchSlidesVisibility: true,
-        watchSlidesProgress: true,
-        slideToClickedSlide: true,
-    });
-
-    galleryTop.on('slideChange', function () {
-        galleryThumbs.slideTo(galleryTop.activeIndex);
-    });
-
-    galleryThumbs.on('slideChange', function () {
-        galleryTop.slideTo(galleryThumbs.activeIndex);
+    document.addEventListener('DOMContentLoaded', function() {
+        var galleryTop = new Swiper('.gallery-top', {
+            spaceBetween: 10,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            on: {
+                slideChange: function () {
+                    var activeIndex = this.activeIndex;
+                    var origincls = 'productguide d-flex justify-content-center align-items-center position-relative';
+                    document.querySelector('.productguide').classList = 'active-' + activeIndex +' '+ origincls;
+                }
+            }
+        });
     });
 </script>
 
